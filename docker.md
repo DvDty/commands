@@ -40,8 +40,6 @@
 
 `$ docker exec some_name ps aux`
 
-> Rule of thumb
-
-> docker top → quick inspection, debugging minimal containers
-
-> docker exec ps aux → detailed analysis when tools (ps) are available
+> Rule of thumb <br>
+docker top → quick inspection, debugging minimal containers <br>
+docker exec ps aux → detailed analysis when tools (ps) are available
