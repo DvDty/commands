@@ -1,4 +1,4 @@
-## Docker
+## General commands
 
 `$ docker info` general info, image/container count, etc.
 
@@ -12,13 +12,12 @@
 
 `$ docker -d ubuntu /bin/sh -c "while true; do echo hello world; sleep 1; done"` long running container
 
-`$ docker logs some_name"` logs
+`$ docker logs some_name` logs
 - `-f` follow
 - `--tail` last x lines
 - `-t` with timestamps
 
 `$ docker logs -ft some_name` new logs
-
 
 ## Inside container commands
 
@@ -32,6 +31,15 @@
 
 #### Other
 
-`$ ps aux` running processes
-
 `$ apt-get update; apt-get install vim` install package
+
+
+## Inspecting containers
+
+`$ docker top some_name` 
+
+`$ docker exec some_name ps aux`
+
+> Rule of thumb
+docker top → quick inspection, debugging minimal containers
+docker exec ps aux → detailed analysis when tools (ps) are available
