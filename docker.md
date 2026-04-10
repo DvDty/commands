@@ -1,0 +1,9 @@
+$ docker info - general info, image/container count, etc.
+$ docker run -it ubuntu /bin/bash - run container
+$ docker 
+
+Inside container commands:
+ - networking
+$ hostname
+$ hostname -I
+$ cat /etc/hosts
