@@ -9,7 +9,7 @@
 
 ### Inside container commands:
 
- - networking
+#### Networking
 
 `$ hostname`
 
