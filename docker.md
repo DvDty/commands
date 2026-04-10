@@ -1,13 +1,13 @@
-### Docker
+## Docker
 
-`$ docker info - general info, image/container count, etc.`
+`$ docker info` general info, image/container count, etc.
 
 `$ docker run -it ubuntu /bin/bash - run container`
 
 `$ docker `
 
 
-### Inside container commands:
+## Inside container commands
 
 #### Networking
 
@@ -16,3 +16,7 @@
 `$ hostname -I`
 
 `$ cat /etc/hosts`
+
+#### Other
+
+`$ ps -aux` Running processes
