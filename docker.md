@@ -29,20 +29,6 @@
 
 `$ docker rm 80430f8d0921` delete container
 
-## Inside container commands
-
-#### Networking
-
-`$ hostname`
-
-`$ hostname -I`
-
-`$ cat /etc/hosts`
-
-#### Other
-
-`$ apt-get update; apt-get install vim` install package
-
 
 ## Inspecting containers
 
@@ -57,3 +43,19 @@ docker exec ps aux → detailed analysis when tools (ps) are available
 `$ docker stats some_name` CPU, memory, network, storage I/O performance, metrics
 
 `$ docker inspect some_name` configuration information, including names, commands, networking configuration
+
+`$ docker history some_name` check layer commands
+
+`$ docker port some_name 80` check port info
+
+`$ hostname`
+
+`$ hostname -I`
+
+`$ cat /etc/hosts`
+
+
+## Dockerfile
+
+`RUN ` build time commands
+`CMD ` runtime command, only 1 per Dockerfile
