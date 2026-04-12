@@ -58,4 +58,10 @@ docker exec ps aux → detailed analysis when tools (ps) are available
 ## Dockerfile
 
 `RUN ` build time commands
+
 `CMD ` runtime command, only 1 per Dockerfile
+
+`ENTRYPOINT ` bin to execute, CMD commands are passed as arguments to ENTRYPOINT
+
+> `$ docker run -it some/image:latest -g "param;"` <br>
+`CMD` is the default param, could be overriten by `-g` when starting the container
