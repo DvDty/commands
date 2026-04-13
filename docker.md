@@ -65,3 +65,5 @@ docker exec ps aux → detailed analysis when tools (ps) are available
 
 > `$ docker run -it some/image:latest -g "param;"` <br>
 `CMD` is the default param, could be overriten by `-g` when starting the container
+
+`WORKDIR ` layer-persistent cd
